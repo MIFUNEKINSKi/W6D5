@@ -1,0 +1,11 @@
+<h1>ALL the cats night night</h1>
+
+<ul>
+    <% @cats.each do |cat| %>
+    <li>
+         <a href="<%=cat_url(cat)%>"><%= "name:#{cat.name} birth date: #{cat.birth_date} age: #{cat.age}  sex: #{cat.sex}   color #{cat.color}   description #{cat.description}"%> 
+         </a>
+    </li>  
+    <BR>  
+    <% end %>
+</ul>

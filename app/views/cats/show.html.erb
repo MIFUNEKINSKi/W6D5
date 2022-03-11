@@ -1,0 +1,21 @@
+<h1><%= @cat.name %></h1>
+
+
+<table border="1">
+<tr>
+    <th>Birthday:</th>
+    <th>Age</th>
+    <th>Sex:</th>
+    <th>Description:</th>
+    <th>Color:</th>
+</tr>
+<tr>
+    <td><%= @cat.birth_date %></td>
+    <td><%= @cat.age %></td>
+    <td><%= @cat.sex %></td>
+    <td><%= @cat.description %></td>
+    <td><%= @cat.color %></td>
+</tr>
+<a href="<%=cats_url%>">Cat Index</a>
+</table>
+
